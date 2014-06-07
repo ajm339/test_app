@@ -13,13 +13,19 @@ default: &default
 #   <<: *default
 #   database: db/development.sqlite3
 
+# development:
+#   adapter: mysql
+#   database: test_app
+#   username: root
+#   password: 
+#   host: 127.0.0.1
+#   port: 3306
+
 development:
-  adapter: mysql
-  database: test_app
-  username: root
-  password: 
-  host: 127.0.0.1
-  port: 3306
+  adapter: postgresql
+  database: db/development_postgresql
+  pool: 5
+  timeout: 5000
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -28,22 +34,34 @@ development:
 #   <<: *default
 #   database: db/test.sqlite3
 
+# test:
+#   adapter: mysql
+#   database: test_app
+#   username: root
+#   password: 
+#   host: 127.0.0.1
+#   port: 3306
+
 test:
-  adapter: mysql
-  database: test_app
-  username: root
-  password: 
-  host: 127.0.0.1
-  port: 3306
+  adapter: postgresql
+  database: db/test_postgresql
+  pool: 5
+  timeout: 5000
 
 # production:
 #   <<: *default
 #   database: db/production.sqlite3
 
+# production:
+#   adapter: mysql
+#   database: test_app
+#   username: root
+#   password: 
+#   host: 127.0.0.1
+#   port: 3306
+
 production:
-  adapter: mysql
-  database: test_app
-  username: root
-  password: 
-  host: 127.0.0.1
-  port: 3306
+  adapter: postgresql
+  database: db/production_postgresql
+  pool: 5
+  timeout: 5000
