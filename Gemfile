@@ -6,10 +6,8 @@ gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 
-group :development, :test do
-	gem 'pg', '~> 0.17.1'
-end
 
+gem 'pg', '~> 0.17.1'
 gem 'aws-sdk'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
  gem 'therubyracer',  platforms: :ruby
