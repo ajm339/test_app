@@ -12,6 +12,11 @@ test:
 
 production:
   adapter: postgresql
-  database: db/production_postgresql
-  pool: 5
+  encoding: unicode
+  database: blogdb
+  username: blog_user
+  password: blogpassword
+  hots: blog-db.chfsh544rna3.us-west-2.rds.amazonaws.com:5432
+  port: 5342
+  pool: 20
   timeout: 5000

@@ -1,0 +1,12 @@
+OLD:
+"deploy": {
+    "alex": {
+      "database": {
+        "username": "alex",
+        "password": "soccer92",
+        "database": "alex",
+        "host": "alex.c2wbkdrr7llk.us-east-1.rds.amazonaws.com",
+        "adapter": "postgresql"
+      }
+    }
+  }
