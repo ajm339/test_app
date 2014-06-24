@@ -7,6 +7,7 @@
 role :app, %w{deploy@ec2-54-218-8-251.us-west-2.compute.amazonaws.com}
 #role :web, %w{deploy@example.com}
 role :db, 'ec2-54-218-8-251.us-west-2.compute.amazonaws.com', :primary => true
+set :rails_env, :production
 
 
 # Extended Server Syntax
@@ -15,7 +16,7 @@ role :db, 'ec2-54-218-8-251.us-west-2.compute.amazonaws.com', :primary => true
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'ec2-54-218-8-251.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
+server 'ec2-54-218-8-251.us-west-2.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}
 
 
 # Custom SSH Options
