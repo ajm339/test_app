@@ -6,7 +6,7 @@
 
 role :app, %w{deploy@ec2-54-218-8-251.us-west-2.compute.amazonaws.com}
 #role :web, %w{deploy@example.com}
-role :db, location, :primary => true
+role :db, 'ec2-54-218-8-251.us-west-2.compute.amazonaws.com', :primary => true
 
 
 # Extended Server Syntax
