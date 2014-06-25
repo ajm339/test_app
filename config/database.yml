@@ -13,10 +13,10 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: blogtestdb
+  database: blogdb
   username: deploy
   password: deploypassword
-  hots: blog-test-db.chfsh544rna3.us-west-2.rds.amazonaws.com
+  hots: blogdb.chfsh544rna3.us-west-2.rds.amazonaws.com:5432
   port: 5342
   pool: 20
   timeout: 5000
