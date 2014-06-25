@@ -36,7 +36,7 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use passenger as the app server
-gem 'passenger', group: :production
+gem 'passenger'
 
 # Use Capistrano for deployment
  gem 'capistrano-rails', group: :development
