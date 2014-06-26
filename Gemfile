@@ -6,13 +6,14 @@ gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 
+gem 'rake', '~> 10.3.2'
 
 gem 'pg', '~> 0.17.1'
 gem 'aws-sdk'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
  gem 'therubyracer',  platforms: :ruby
 
-gem 'nokogiri', '~> 1.6.2.1'
+gem 'nokogiri', '1.6.2.1'
 
 
 # Use SCSS for stylesheets
