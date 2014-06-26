@@ -13,7 +13,7 @@ gem 'aws-sdk'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
  gem 'therubyracer',  platforms: :ruby
 
-gem 'nokogiri', '1.6.2.1'
+#gem 'nokogiri', '1.6.2.1'
 
 
 # Use SCSS for stylesheets
