@@ -4,6 +4,7 @@ lock '3.2.1'
 set :application, 'blog'
 set :repo_url, 'https://github.com/ajm339/test_app.git'
 set :branch, 'master'
+ssh_options[:paranoid] = false 
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
