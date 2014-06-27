@@ -6,8 +6,13 @@ development:
 
 test:
   adapter: postgresql
-  database: db/test_postgresql
-  pool: 5
+  encoding: unicode
+  database: blogdb
+  username: deploy
+  password: deploypassword
+  hots: blogdb.chfsh544rna3.us-west-2.rds.amazonaws.com
+  port: 5342
+  pool: 20
   timeout: 5000
 
 production:
