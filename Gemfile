@@ -36,8 +36,8 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use passenger as the app server
-gem 'passenger'
+# Use unicorn as the app server
+gem 'unicorn'
 
 # Use Capistrano for deployment
  gem 'capistrano-rails', group: :development
