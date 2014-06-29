@@ -1,27 +1,17 @@
 development:
-  adapter: postgresql
+  adapter: pg
   database: db/development_postgresql
   pool: 5
   timeout: 5000
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  database: blogdb
-  username: deploy
-  password: deploypassword
-  hots: blogdb.chfsh544rna3.us-west-2.rds.amazonaws.com
-  port: 5342
-  pool: 20
+  adapter: pg
+  database: db/development_postgresql
+  pool: 5
   timeout: 5000
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: blogdb
-  username: deploy
-  password: deploypassword
-  hots: blogdb.chfsh544rna3.us-west-2.rds.amazonaws.com
-  port: 5342
-  pool: 20
+  adapter: pg
+  database: db/development_postgresql
+  pool: 5
   timeout: 5000
