@@ -1,17 +1,29 @@
 development:
-  adapter: pg
-  database: db/development_postgresql
+  adapter: postgres
+  database: bloggy
+  host: bloggy.cvdhgdrlajpc.us-west-2.rds.amazonaws.com
+  port: 5432
+  username: deploy
+  password: deploypassword
   pool: 5
   timeout: 5000
 
 test:
-  adapter: pg
-  database: db/development_postgresql
+  adapter: postgres
+  database: bloggy
+  host: bloggy.cvdhgdrlajpc.us-west-2.rds.amazonaws.com
+  port: 5432
+  username: deploy
+  password: deploypassword
   pool: 5
   timeout: 5000
 
 production:
-  adapter: pg
-  database: db/development_postgresql
+  adapter: postgres
+  database: bloggy
+  host: bloggy.cvdhgdrlajpc.us-west-2.rds.amazonaws.com
+  port: 5432
+  username: deploy
+  password: deploypassword
   pool: 5
   timeout: 5000
